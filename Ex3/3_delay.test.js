@@ -9,3 +9,10 @@ describe('Arguments Validation: ', () => {
     expect(someFunc(undefined)).toBe(undefined);
   });
 });
+
+describe('Should add: ', () => {
+  const sum = someFunc(2, 3);
+  test('Two positive numbers 2, 3: ', () => {
+    expect(sum()).toBe(5);
+  });
+});
