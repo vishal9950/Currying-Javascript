@@ -1,6 +1,6 @@
 function sum(args) {
-  if ((args === null)) {
-    return null;
+  if ((args === null) || (args === undefined)) {
+    return args;
   }
   return true;
 }
