@@ -6,11 +6,10 @@ function validateInput(input) {
 }
 
 function identify(argument) {
-  const check1 = validateInput(argument);
-  if (!check1) {
+  if (!validateInput(argument)) {
     return argument;
   }
-  return true;
+  return argument;
 }
 
 module.exports = identify;
