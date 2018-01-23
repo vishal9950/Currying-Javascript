@@ -9,6 +9,9 @@ const callAndApply = {
     return method.call(object, nameArg, ageArg, tShirtSizeArg);
   },
   applier(object, method, argumentsArr) {
+    if ((object === null) || (method === null) || (argumentsArr === null)) {
+      return null;
+    }
     return method.apply(object, argumentsArr);
   },
 };
