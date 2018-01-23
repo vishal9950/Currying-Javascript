@@ -1,8 +1,11 @@
-function sum(args) {
-  if ((args === null) || (args === undefined)) {
-    return args;
+function sum(first, second) {
+  if ((first === null) || (first === undefined)) {
+    return first;
   }
-  return true;
+  if ((second === null) || (second === undefined)) {
+    return second;
+  }
+  return first + second;
 }
 
 module.exports = sum;
