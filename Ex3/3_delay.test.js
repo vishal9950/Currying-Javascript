@@ -11,18 +11,18 @@ describe('Arguments Validation: ', () => {
 });
 
 describe('Should add: ', () => {
-  const sum = someFunc(2, 3);
+  const sum = someFunc(2);
   test('Two positive numbers 2, 3: ', () => {
-    expect(sum()).toBe(5);
+    expect(sum(3)).toBe(5);
   });
 
-  const sum1 = someFunc(-1, -2);
+  const sum1 = someFunc(-1);
   test('Two negative numbers -1, -2: ', () => {
-    expect(sum1()).toBe(-3);
+    expect(sum1(-2)).toBe(-3);
   });
 
-  const sum2 = someFunc(-2, 6);
+  const sum2 = someFunc(-2);
   test('One negative, one positive -2, 6: ', () => {
-    expect(sum2()).toBe(4);
+    expect(sum2(6)).toBe(4);
   });
 });

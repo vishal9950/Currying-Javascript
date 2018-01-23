@@ -12,18 +12,18 @@ const verifyIfUndef = (arg) => {
   return true;
 };
 
-const someFunc = (first, second) => {
-  const nullCheck = verifyIfNull(first) && verifyIfNull(second);
+const someFunc = (first) => {
+  const nullCheck = verifyIfNull(first);
   if (!nullCheck) {
     console.log('Err1: null argument supplied');
     return null;
   }
-  const undefCheck = verifyIfUndef(first) && verifyIfUndef(second);
+  const undefCheck = verifyIfUndef(first);
   if (!undefCheck) {
     console.log('Err2: undefined arg supplied');
     return undefined;
   }
-  const sum = () => first + second;
+  const sum = second => first + second;
   return sum;
 };
 
