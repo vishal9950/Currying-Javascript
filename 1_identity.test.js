@@ -14,4 +14,8 @@ describe('Functionality of identify function: ', () => {
   test('Should work for a number: ', () => {
     expect(identify(2)).toBe(2);
   });
+
+  test('Should work for an empty array: ', () => {
+    expect(identify([])).toEqual([]);
+  });
 });
