@@ -26,4 +26,12 @@ describe('Functionality of identify function: ', () => {
   test('Should work for an string: ', () => {
     expect(identify('Sat')).toEqual('Sat');
   });
+
+  const func = function fn() {
+    console.log('hello');
+  };
+
+  test('Should work for a function: ', () => {
+    expect(identify(func)).toEqual(func);
+  });
 });
