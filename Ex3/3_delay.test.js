@@ -20,4 +20,9 @@ describe('Should add: ', () => {
   test('Two negative numbers -1, -2: ', () => {
     expect(sum1()).toBe(-3);
   });
+
+  const sum2 = someFunc(-2, 6);
+  test('One negative, one positive -2, 6: ', () => {
+    expect(sum2()).toBe(4);
+  });
 });
