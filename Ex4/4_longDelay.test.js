@@ -14,4 +14,8 @@ describe('Working of function longDelay: ', () => {
   test('Should work for one argument: ', () => {
     expect(typeof longDelay(1)).toBe('function');
   });
+
+  test('Should work for three arguments: ', () => {
+    expect(typeof longDelay(10)).toBe('function');
+  });
 });
