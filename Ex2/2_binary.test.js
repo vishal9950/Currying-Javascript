@@ -18,4 +18,8 @@ describe('Should add: ', () => {
   test('Two negative numbers -1 and -5: ', () => {
     expect(sum(-1, -5)).toBe(-6);
   });
+
+  test('One positive 3 and one negative number -4: ', () => {
+    expect(sum(3, -4)).toBe(-1);
+  });
 });
