@@ -17,3 +17,10 @@ describe('Argument Validation: ', () => {
     expect(callAndApply.applier(undefined)).toBe(undefined);
   });
 });
+
+describe('Caller function: ', () => {
+  const fn = x => x;
+  test('Should work for proper args (all empty): ', () => {
+    expect(typeof callAndApply.caller({}, fn, [], [], [])).toBe('object');
+  });
+});
