@@ -12,4 +12,8 @@ describe('Argument Validation: ', () => {
   test('Should not work for null args: ', () => {
     expect(callAndApply.applier(null)).toBe(null);
   });
+
+  test('Should not work for undefined args: ', () => {
+    expect(callAndApply.applier(undefined)).toBe(undefined);
+  });
 });

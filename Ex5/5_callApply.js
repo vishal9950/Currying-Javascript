@@ -12,6 +12,9 @@ const callAndApply = {
     if ((object === null) || (method === null) || (argumentsArr === null)) {
       return null;
     }
+    if ((object === undefined) || (method === undefined) || (argumentsArr === undefined)) {
+      return undefined;
+    }
     return method.apply(object, argumentsArr);
   },
 };
