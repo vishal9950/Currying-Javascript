@@ -4,4 +4,8 @@ describe('Arguments validation: ', () => {
   test('Should not work for null: ', () => {
     expect(identify(null)).toBe(null);
   });
+
+  test('Should not work for undefined: ', () => {
+    expect(identify(undefined)).toBe(undefined);
+  });
 });
