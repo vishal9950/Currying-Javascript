@@ -8,6 +8,10 @@ describe('Arguments Validation: ', () => {
   test('Should not work for undefined arg: ', () => {
     expect(sum(undefined)).toBe(undefined);
   });
+
+  test('Should not add two strings \'1\' + \'2\': ', () => {
+    expect(sum('1', '2')).toBe(false);
+  });
 });
 
 describe('Should add: ', () => {
