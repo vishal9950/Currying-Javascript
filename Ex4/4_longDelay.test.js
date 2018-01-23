@@ -15,11 +15,15 @@ describe('Working of function longDelay: ', () => {
     expect(typeof longDelay(1)).toBe('function');
   });
 
-  test('Should work for three arguments: ', () => {
+  test('Should add for 1 more argument: ', () => {
     expect(typeof longDelay(10)).toBe('function');
   });
 
   test('Should give total when no arg passed: ', () => {
     expect(longDelay()).toBe(11);
+  });
+
+  test('Should add for 1 more argument: ', () => {
+    expect(typeof longDelay(-2)).toBe('function');
   });
 });
