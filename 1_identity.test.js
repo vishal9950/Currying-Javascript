@@ -18,4 +18,8 @@ describe('Functionality of identify function: ', () => {
   test('Should work for an empty array: ', () => {
     expect(identify([])).toEqual([]);
   });
+
+  test('Should work for an empty object: ', () => {
+    expect(identify({})).toEqual({});
+  });
 });
