@@ -1,7 +1,7 @@
 const longDelay = (args) => {
-  if ((args === null)) {
-    console.log('Err1: null arg supplied');
-    return null;
+  if ((args === null) || (args === undefined)) {
+    console.log(`Err1: ${args} arg supplied`);
+    return args;
   }
   return true;
 };
