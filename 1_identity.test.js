@@ -22,4 +22,8 @@ describe('Functionality of identify function: ', () => {
   test('Should work for an empty object: ', () => {
     expect(identify({})).toEqual({});
   });
+
+  test('Should work for an string: ', () => {
+    expect(identify('Sat')).toEqual('Sat');
+  });
 });
