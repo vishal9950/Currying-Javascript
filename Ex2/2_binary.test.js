@@ -12,6 +12,17 @@ describe('Arguments Validation: ', () => {
   test('Should not add two strings \'1\' + \'2\': ', () => {
     expect(sum('1', '2')).toBe(false);
   });
+
+  const obj1 = {
+    hello: 1,
+  };
+
+  const obj2 = {
+    bye: 2,
+  };
+  test('Should not add two objects ', () => {
+    expect(sum(obj1, obj2)).toBe(false);
+  });
 });
 
 describe('Should add: ', () => {
