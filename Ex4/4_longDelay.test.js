@@ -18,4 +18,8 @@ describe('Working of function longDelay: ', () => {
   test('Should work for three arguments: ', () => {
     expect(typeof longDelay(10)).toBe('function');
   });
+
+  test('Should give total when no arg passed: ', () => {
+    expect(longDelay()).toBe(11);
+  });
 });
