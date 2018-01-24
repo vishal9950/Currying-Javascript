@@ -1,7 +1,7 @@
 const curry = (func) => {
-  if (func === null) {
-    console.log('Err1: null args supplied');
-    return null;
+  if ((func === null) || (func === undefined)) {
+    console.log(`Err1: ${func} args supplied`);
+    return func;
   }
   return true;
 };
