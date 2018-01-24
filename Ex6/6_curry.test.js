@@ -9,3 +9,11 @@ describe('Argument validation: ', () => {
     expect(curry(undefined)).toBe(undefined);
   });
 });
+
+describe('Functionality of curry function: ', () => {
+  const fn = (a, b, c) => (a + b + c);
+  const curriedFunc = curry(fn);
+  test('Should add curry(fn)(1)(2)(3)', () => {
+    expect(curriedFunc(1)(2)(3)).toBe(6);
+  });
+});
