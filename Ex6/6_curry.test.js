@@ -16,4 +16,8 @@ describe('Functionality of curry function: ', () => {
   test('Should add curry(fn)(1)(2)(3)', () => {
     expect(curriedFunc(1)(2)(3)).toBe(6);
   });
+
+  test('Should add curriedFunc(1)(2, 3)', () => {
+    expect(curriedFunc(1)(2, 3)).toBe(6);
+  });
 });
